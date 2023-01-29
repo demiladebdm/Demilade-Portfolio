@@ -11,27 +11,39 @@ const Portfolio = () => {
     const portfolios = [
         {
             id: 1,
-            source: arrayDestruct
+            source: arrayDestruct,
+            link: "#",
+            code: "#"
         },
         {
             id: 2,
-            source: musica
+            source: musica,
+            link: "#",
+            code: "#"
         },
         {
             id: 3,
-            source: navbar
+            source: navbar,
+            link: "#",
+            code: "#"
         },
         {
             id: 4,
-            source: tictactoe
+            source: tictactoe,
+            link: "https://dof-tic-tac-toe.netlify.app/",
+            code: "https://github.com/demiladebdm/Tic-Tac-Toe/tree/master"
         },
         {
             id: 5,
-            source: reactSmooth
+            source: reactSmooth,
+            link: "#",
+            code: "#"
         },
         {
             id: 6,
-            source: cinema
+            source: cinema,
+            link: "#",
+            code: "#"
         }
     ]
 
@@ -47,13 +59,13 @@ const Portfolio = () => {
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
                 {
-                    portfolios.map(({ id, source }) => (
+                    portfolios.map(({ id, source, link, code }) => (
                         
                         <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                             <img src={source} alt="" className='rounded-md duration-200 hover:scale-105' />
                             <div className='flex items-center justify-center'>
-                                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-                                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                                <button className='w-1/2 px-6 py-2 my-4 duration-200 hover:scale-105'><a href={link} target="_blank" rel="noreferrer">Demo</a></button>
+                                <button className='w-1/2 px-6 py-2 my-4 duration-200 hover:scale-105'><a href={code} target="_blank" rel="noreferrer">Code</a></button>
                             </div>
                         </div>
                     ))
