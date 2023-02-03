@@ -1,10 +1,10 @@
 import React from 'react';
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
-import musica from '../assets/portfolio/musica.jpg';
-import navbar from '../assets/portfolio/navbar.jpg';
-import tictactoe from '../assets/portfolio/tictactoe.jpg';
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg';
-import cinema from '../assets/portfolio/cinema.jpg';
+import arrayDestruct from '../../assets/portfolio/arrayDestruct.jpg';
+import musica from '../../assets/portfolio/musica.jpg';
+import navbar from '../../assets/portfolio/navbar.jpg';
+import tictactoe from '../../assets/portfolio/tictactoe.jpg';
+import reactSmooth from '../../assets/portfolio/reactSmooth.jpg';
+import cinema from '../../assets/portfolio/cinema.jpg';
 
 const Portfolio = () => {
 

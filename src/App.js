@@ -1,10 +1,10 @@
 import NavBar from "./components/NavBar";
-import Home from "./components/Home";
-import SocialLinks from "./components/SocialLinks";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
+import Home from "./pages/Home/Home";
+import SocialLinks from "./pages/SocialLinks/SocialLinks";
+import About from "./pages/About/About";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import Experience from "./pages/Experience/Experience";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
