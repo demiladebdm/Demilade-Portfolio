@@ -1,9 +1,9 @@
 import React from 'react';
-import arrayDestruct from '../../assets/portfolio/arrayDestruct.jpg';
+import todo from '../../assets/portfolio/todo.jpg';
 import musica from '../../assets/portfolio/musica.jpg';
 import navbar from '../../assets/portfolio/navbar.jpg';
 import tictactoe from '../../assets/portfolio/tictactoe.jpg';
-import reactSmooth from '../../assets/portfolio/reactSmooth.jpg';
+import roboFriends from '../../assets/portfolio/roboFriends.png';
 import cinema from '../../assets/portfolio/cinema.jpg';
 
 const Portfolio = () => {
@@ -11,9 +11,9 @@ const Portfolio = () => {
     const portfolios = [
         {
             id: 1,
-            source: arrayDestruct,
-            link: "#",
-            code: "#"
+            source: todo,
+            link: "https://dof-todo.netlify.app/",
+            code: "https://github.com/demiladebdm/React-todo/tree/main"
         },
         {
             id: 2,
@@ -35,9 +35,9 @@ const Portfolio = () => {
         },
         {
             id: 5,
-            source: reactSmooth,
-            link: "#",
-            code: "#"
+            source: roboFriends,
+            link: "https://daddydof-robofriends-app.netlify.app",
+            code: "https://github.com/demiladebdm/robofriends/tree/main"
         },
         {
             id: 6,
