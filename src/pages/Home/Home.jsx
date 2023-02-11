@@ -1,25 +1,23 @@
 import React from 'react';
-// import HeroImage from '../../assets/heroImage.jpeg';
+// import HeroImage from '../assets/heroImage.jpeg';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { Link } from 'react-scroll';
 
-import "./Home.css";
-
 const Home = () => {
   return (
-    <div name="home" className='home'>
+    <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
 
-        <div className='homeContainer'>
-            <div className='contain'>
-                <h2>
-                    <span>Demilade Folarin</span> - Front End Developer
+        <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
+            <div className='flex flex-col justify-center h-full w-full text-center'>
+                <h2 className='text-4xl sm:text-7xl font-bold text-white'>
+                    I'm Demilade - A Full Stack Developer
                 </h2>
-                <p>
+                <p className='text-gray-500 py-4'>
                     I have diverse set of skills and a proven track record of building seamless digital experiences. Proficient in all layers of development, ready to craft amazing websites and apps.
                 </p>
 
-                <div className='linkContain'>
-                    <Link to="portfolio" smooth duration={500} className='links'
+                <div className='pt-4 flex justify-center'>
+                    <Link to="portfolio" smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex justify-center items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'
                     >
                         Portfolio 
                         <span className='group-hover:rotate-90 duration-300'>
@@ -31,7 +29,7 @@ const Home = () => {
             </div>
 
             {/* <div>
-                <img src={HeroImage} alt="My profile" className='rounded-2xl mx-auto w-2/3 md:w-full pb-40' />
+                <img src={HeroImage} alt="My profile" className='rounded-2xl mx-auto w-2/3 md:w-full' />
             </div> */}
 
         </div>
