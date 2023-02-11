@@ -90,7 +90,7 @@ const Experience = () => {
                 <p className='py-6'>These are the technologies I've worked with</p>
             </div>
 
-            <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center pt-2 pb-8 px-12 sm:px-0 h-full'>
+            <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-2 px-12 sm:px-0 h-full'>
                 {techs.map(({ id, source, title, style }) => (
 
                     <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
