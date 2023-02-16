@@ -2,7 +2,7 @@ import React from 'react';
 import todo from '../../assets/portfolio/todo.png';
 import musica from '../../assets/portfolio/musica.png';
 import ecommerce from '../../assets/portfolio/ecommerce.png';
-import tictactoe from '../../assets/portfolio/tictactoe.jpg';
+import tictactoe from '../../assets/portfolio/tictactoe.png';
 import roboFriends from '../../assets/portfolio/roboFriends.png';
 // import cinema from '../../assets/portfolio/cinema.jpg';
 import AmazonClone from '../../assets/portfolio/AmazonClone.png';
@@ -64,13 +64,13 @@ const Portfolio = () => {
             </div>
 
 
-            <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-2 px-12 sm:px-0 h-full'>
+            <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-2 px-12 sm:px-0 h-full object-contain'>
                 {
                     portfolios.map(({ id, title, source, link, code }) => (
                         
                         <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                             <h1>{title}</h1>
-                            <img src={source} alt="" className='rounded-md duration-200 hover:scale-105 py-2' />
+                            <img src={source} alt="" className='object-contain rounded-md duration-200 hover:scale-105 py-2' />
                             <div className='flex items-center justify-center'>
                                 <button className='w-1/2 px-6 py-1 my-4 duration-200 hover:scale-105'><a href={link} target="_blank" rel="noreferrer">Demo</a></button>
                                 <button className='w-1/2 px-6 py-1 my-4 duration-200 hover:scale-105'><a href={code} target="_blank" rel="noreferrer">Code</a></button>
